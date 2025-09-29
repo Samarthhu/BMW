@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+  --primary: #0a0a0a;
+  --accent: #0066b1;
+  --bg: #ffffff;
+  --text: #222;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+.dark {
+  --bg: #0e0e0e;
+  --text: #f1f1f1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background: var(--primary);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.navbar .logo span { color: var(--accent); }
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+.navbar a:hover,
+.navbar a.active { color: var(--accent); }
+
+.mode-toggle {
+  background: none;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  padding: 0.4rem 0.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.mode-toggle:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.hero {
+  background: url('https://cdn.bmwblog.com/wp-content/uploads/2024/01/bmw-m4-g82-hero.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.btn {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+.btn:hover { background: #004c84; }
+
+.models, .reviews, .contact {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+.models h2, .reviews h2, .contact h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  color: var(--accent);
+}
+
+.card-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.card {
+  background: var(--bg);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover { transform: translateY(-8px); }
+.card img { width: 100%; height: 200px; object-fit: cover; }
+.card-body { padding: 1rem; }
+
+.reviews .review {
+  background: var(--bg);
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border-left: 5px solid var(--accent);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+.contact form {
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+  margin: auto;
+}
+.contact input, .contact textarea, .contact button {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.contact button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.contact button:hover { background: #004c84; }
+
+footer {
+  background: var(--primary);
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+
+
+.hero p{
+  color: black;
+  
+}

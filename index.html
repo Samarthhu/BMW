@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMW Enthusiast Blog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <!-- BMW logo from your uploaded file -->
+    <div class="logo">
+      <img src="mainlogo-removebg-preview.png" height="80px" alt="BMW Logo" style="height:40px; vertical-align:middle;"> 
+      <span>Blog</span>
+    </div>
+    
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#models">Models</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="mode-toggle" id="modeToggle">🌙</button>
+  </header>
+
+  <!-- Hero Section with your main BMW logo as background -->
+  <section id="home" class="hero" style="background: url('logo.jpg') center/cover no-repeat;">
+    <div class="hero-content">
+      <h1>Welcome to the BMW World</h1>
+      <p style="color: black;">Your daily dose of BMW news, models, and automotive passion.</p>
+      <a href="#models" class="btn">Explore Models</a>
+    </div>
+  </section>
+
+  <!-- Featured Models -->
+  <section id="models" class="models">
+    <h2>Featured BMW Models</h2>
+    <div class="card-grid">
+      <article class="card">
+        <img src="m4.jfif" alt="BMW M4" />
+        <div class="card-body">
+          <h3>BMW M4</h3>
+          <p>The iconic sports sedan with powerful performance and precise handling.</p>
+        </div>
+      </article>
+      <!-- Replaced BMW i8/iX with M5 using your uploaded image -->
+      <article class="card">
+        <img src="m5.jpg" alt="BMW M5" />
+        <div class="card-body">
+          <h3>BMW M5</h3>
+          <p>The ultimate high-performance sedan blending luxury with incredible power.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="m8.jfif" alt="BMW M8" />
+        <div class="card-body">
+          <h3>BMW M8</h3>
+          <p>The BMW M8 is a luxury grand tourer that fuses breathtaking performance with elegant design.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <h2>Latest Reviews</h2>
+    <div class="review">
+      <h3>BMW M4 Competition 2025 Review</h3>
+      <p>The new M4 Competition delivers blistering speed and a sharper design. Driving enthusiasts will love the refined handling and improved aerodynamics.</p>
+    </div>
+    <div class="review">
+      <h3>BMW M5 Test Drive</h3>
+      <p>The BMW M5 impresses with breathtaking acceleration and superb comfort, setting a new standard for sports sedans.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 BMW Blog | Built with passion for BMW lovers</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
